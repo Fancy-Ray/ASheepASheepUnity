@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts;
 using System;
+using System.Linq.Expressions;
 
 public class Main : MonoBehaviour
 {
     public GameObject card;
-    static bool index=true;
+    static bool index { set; get; } = true;
     public Sprite[] sprites;
     private Vector3[] coordinates=new Vector3[6];//存贮最开始创建cards选择的坐标
-    private InstanceZonesRequired a = new InstanceZonesRequired(10, new Vector3[4] { new Vector3(0, 4, 0), new Vector3(-4, 4, 0), new Vector3(-2, 4, 0), new Vector3(2,4,0)});
+    public InstanceZonesRequired zone1 = new InstanceZonesRequired(9, new Vector3[4] { new Vector3(0, 4, 0), new Vector3(-4, 4, 0), new Vector3(-2, 4, 0), new Vector3(2,4,0)},new int[4] { 3,2,2,2});
     GameObject card0;
     // Start is called before the first frame update
     void Start()
     {
-        //card0 =Instantiate(card, gameObject.transform);
-        //card0.GetComponentInChildren<SpriteRenderer>().sprite=sprites[1];
-        a.CreateCards(sprites, card, GameObject.Find("trough").transform);
+        try
+        {
+            zone1.CreateCards(sprites, card, GameObject.Find("trough").transform);
+        }
+        catch (Exception e) { 
+        Debug.LogException(e);
+            index= false;
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         if(index)
-            index=a.DropCards();
+            index= zone1.DropCards();
     }
 }

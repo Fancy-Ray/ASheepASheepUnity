@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8809701512008701435}
   - component: {fileID: 3924439667689737580}
   - component: {fileID: 6580752862004463722}
+  - component: {fileID: 6268303818185551566}
   m_Layer: 0
   m_Name: shroud
   m_TagString: Untagged
@@ -28,11 +29,11 @@ Transform:
   m_GameObject: {fileID: 3518844489200015984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7531662975591782206}
-  m_RootOrder: 2
+  m_Father: {fileID: 7927505520459538693}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8809701512008701435
 SpriteRenderer:
@@ -124,6 +125,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9041968, y: 1.1504674}
   m_EdgeRadius: 0
+--- !u!210 &6268303818185551566
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3518844489200015984}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &5317135267057665297
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3210171800053755034}
   - component: {fileID: 7596842594740665382}
+  - component: {fileID: 2078351795348519369}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -150,11 +163,11 @@ Transform:
   m_GameObject: {fileID: 5317135267057665297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7531662975591782206}
-  m_RootOrder: 1
+  m_Father: {fileID: 7927505520459538693}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7596842594740665382
 SpriteRenderer:
@@ -208,6 +221,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &2078351795348519369
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5317135267057665297}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
 --- !u!1 &5846185303601587355
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7927505520459538693}
   - component: {fileID: 987578426488358088}
+  - component: {fileID: 4204695858565137314}
   m_Layer: 0
   m_Name: item
   m_TagString: Untagged
@@ -234,9 +259,11 @@ Transform:
   m_GameObject: {fileID: 5846185303601587355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3210171800053755034}
+  - {fileID: 4084038103656773803}
   m_Father: {fileID: 7531662975591782206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,6 +319,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &4204695858565137314
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846185303601587355}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &8427535624265883951
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,12 +355,10 @@ Transform:
   m_GameObject: {fileID: 8427535624265883951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7927505520459538693}
-  - {fileID: 3210171800053755034}
-  - {fileID: 4084038103656773803}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
