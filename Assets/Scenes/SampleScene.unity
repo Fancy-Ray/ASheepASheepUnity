@@ -308,3 +308,10 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 5900e540c586a5e499a2e9012d41e84d, type: 3}
   - {fileID: 21300000, guid: 7b756dd59a5d71543aa59ae0d904820c, type: 3}
+  - {fileID: 21300000, guid: 8788e7741e96d5c41aea236671ebe9d7, type: 3}
+  - {fileID: 21300000, guid: 178103f03bd3d77468de1f893e274c02, type: 3}
+  - {fileID: 21300000, guid: 8b974dbd26198f64886edb3915fb48eb, type: 3}
+  - {fileID: 21300000, guid: 1c685b3e33d5db647b776a4b63c3f5a2, type: 3}
+  - {fileID: 21300000, guid: 200f845860c40234c93937e52958088f, type: 3}
+  - {fileID: 21300000, guid: 833c4eb1d8268b941b09058b47b213ea, type: 3}
+  - {fileID: 21300000, guid: 427862e510f25fc4a96c47d06313d582, type: 3}
